@@ -1,0 +1,10 @@
+C:\Users\duski\source\repos\talantly\talantly\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\duski\source\repos\talantly\talantly\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\duski\source\repos\talantly\talantly\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\duski\source\repos\talantly\talantly\bin\Debug\netcoreapp3.0\talantly.exe
+C:\Users\duski\source\repos\talantly\talantly\obj\Debug\netcoreapp3.0\talantly.csprojAssemblyReference.cache
+C:\Users\duski\source\repos\talantly\talantly\obj\Debug\netcoreapp3.0\staticwebassets\talantly.StaticWebAssets.Manifest.cache
+C:\Users\duski\source\repos\talantly\talantly\obj\Debug\netcoreapp3.0\staticwebassets\talantly.StaticWebAssets.xml
+C:\Users\duski\source\repos\talantly\talantly\obj\Debug\netcoreapp3.0\talantly.AssemblyInfoInputs.cache
+C:\Users\duski\source\repos\talantly\talantly\obj\Debug\netcoreapp3.0\talantly.AssemblyInfo.cs
+C:\Users\duski\source\repos\talantly\talantly\obj\Debug\netcoreapp3.0\talantly.RazorTargetAssemblyInfo.cache
