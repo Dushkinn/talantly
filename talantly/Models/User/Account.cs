@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace talantly.Models
+namespace talantly.Models.User
 {
     public class Account
     {
@@ -15,6 +15,7 @@ namespace talantly.Models
         public String surname { get; set; }
         public byte[] Img { get; set; }
         public List<Profile> ProfileList { get; set; } 
+        public String password { get; set; }
        
     }
 }

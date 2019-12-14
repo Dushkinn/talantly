@@ -1,9 +1,9 @@
 ﻿using System;
 namespace talantly.Models.User
 {
-    public class EmptyClass
+    public class ProfilePriority
     {
-        public EmptyClass()
+        public ProfilePriority()
         {
         }
 

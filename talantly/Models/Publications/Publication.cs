@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace talantly.Models
+namespace talantly.Models.Publications
 {
     public class Publication
     {

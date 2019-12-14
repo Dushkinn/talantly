@@ -1,5 +1,5 @@
 ﻿using System;
-namespace talantly.Models.Publication
+namespace talantly.Models.Publications
 {
     public class Category
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace talantly.Models
+namespace talantly.Models.User
 {
     public class AccountRole
     {
