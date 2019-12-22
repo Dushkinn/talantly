@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace talantly.Interface
 {
-    interface IBaseRepository<T> where T : class
+    public interface IBaseRepository<T> where T : class
     {
         IEnumerable<T> List(Expression<Func<T, bool>> expression);
         bool Any(Expression<Func<T, bool>> expression);

@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using talantly.Helper;
 using talantly.Models.User;
+using talantly.Services;
 
 namespace talantly.Controllers
 {
@@ -13,8 +17,11 @@ namespace talantly.Controllers
     public class AccountController : ControllerBase
     {
 
-
-
+        private readonly AccountService _accountService;
+        public AccountController(AccountService accountService) 
+        {
+            _accountService = accountService;
+        }
         // GET: api/Account
         //[HttpGet]
         //public Boolean Get()
@@ -44,7 +51,12 @@ namespace talantly.Controllers
         public void Put(int id, [FromBody] string value)
         {
         }
-
+        // PUT: api/Account/5
+        [HttpGet("{id}")]
+        public void Get(int id)
+        {
+            
+        }
         // DELETE: api/Account/5
         [HttpDelete("{id}")]
         public void Delete(int id)
@@ -52,37 +64,22 @@ namespace talantly.Controllers
         }
         // POST: api/Account/login
         [HttpPost("login")]
-        public IActionResult LogIn( String login ,  String password)
+        public  IActionResult LogIn([FromForm]Account account)
         {
-            if (login == "Damir" && password == "12345")
-            {
-                return Ok(new Answer (true));
-            }
-            else
-            {
-                return Ok(new Answer (false));
-            }
+            return Ok(_accountService.Login(account));
         }
         // POST: api/Account/registration
         [HttpPost("registration")]
-        public Boolean Registration(Account account)
+        public IActionResult Registration([FromForm]Account account)
         {
-            if (account.login == "Damir" && account.password == "12345")
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return Ok(_accountService.Register(account));
         }
-
-    }
-    public class Answer {
-        public Answer(Boolean answer) 
+        // POST: api/Account/UpdateAccountProfile
+        [HttpPost("UpdateAccountProfile")]
+        public IActionResult UpdateAccountProfile([FromForm]Account account)
         {
-            this.answer = answer;
+            return Ok(_accountService.UpdateUserProfile(account));
         }
-        public Boolean answer { get; set; }
     }
+    
 }

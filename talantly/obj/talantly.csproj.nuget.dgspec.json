@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\duski\\source\\repos\\talantly\\talantly\\talantly.csproj": {}
+    "C:\\Users\\duski\\Source\\Repos\\talantly\\talantly\\talantly.csproj": {}
   },
   "projects": {
-    "C:\\Users\\duski\\source\\repos\\talantly\\talantly\\talantly.csproj": {
+    "C:\\Users\\duski\\Source\\Repos\\talantly\\talantly\\talantly.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\duski\\source\\repos\\talantly\\talantly\\talantly.csproj",
+        "projectUniqueName": "C:\\Users\\duski\\Source\\Repos\\talantly\\talantly\\talantly.csproj",
         "projectName": "talantly",
-        "projectPath": "C:\\Users\\duski\\source\\repos\\talantly\\talantly\\talantly.csproj",
+        "projectPath": "C:\\Users\\duski\\Source\\Repos\\talantly\\talantly\\talantly.csproj",
         "packagesPath": "C:\\Users\\duski\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\duski\\source\\repos\\talantly\\talantly\\obj\\",
+        "outputPath": "C:\\Users\\duski\\Source\\Repos\\talantly\\talantly\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

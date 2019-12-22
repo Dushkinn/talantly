@@ -12,7 +12,5 @@ namespace talantly.Models.Publications
         public String description { get; set; }
         public List<Attachment> attachmentList { get; set; }
 
-
-
     }
 }

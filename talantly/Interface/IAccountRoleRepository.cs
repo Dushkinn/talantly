@@ -6,7 +6,7 @@ using talantly.Models.User;
 
 namespace talantly.Interface
 {
-    public interface IAccountRepository : IBaseRepository<Account>
+    interface IAccountRoleRepository : IBaseRepository<AccountRole>
     {
     }
 }

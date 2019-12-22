@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using talantly.Interface;
 using talantly.Repository;
+using talantly.Services;
 using talanty.Data;
 
 namespace talantly
@@ -35,7 +36,7 @@ namespace talantly
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<IAccountRepository, AccountRepository>();
+          
             services.AddDbContext<ApplicationContext>(options =>
             {
                 options.UseMySql(
@@ -43,6 +44,9 @@ namespace talantly
                     x => x.MigrationsAssembly("talantly")
                     );
             });
+
+            services.AddScoped<AccountService>();
+            services.AddScoped<IAccountRepository, AccountRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
